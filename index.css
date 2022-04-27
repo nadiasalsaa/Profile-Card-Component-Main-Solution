@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    background-color: var(--dark-cyan);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: right 45vw bottom 45vh, 45vw 45vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.card {
+    width: 350px;
+    height: 375px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#bg{
+    background-image: url(./images/bg-pattern-card.svg);
+    border-radius: 10px 10px 0px 0px;
+    background-repeat: no-repeat;
+}
+
+#bg img{
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: 90px;
+    margin-bottom: 0px !important;
+    margin-left: 120px;
+}
+
+.name {
+    display: flex;
+    gap: 15px;
+    margin-left: 100px !important;
+    margin-right: 100px !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin-bottom: -30px !important;
+}
+
+.name h1 {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+.name p {
+    font-weight: 400;
+    color: var(--dark-grayish-blue);    
+}
+
+#bg p {
+    text-align: center;
+    font-size: 18px;
+    color: var(--dark-gray);
+    margin-bottom: 20px !important;
+}
+
+#bg ul {
+    display: flex;
+    list-style: none;
+    margin-top: 0px !important;
+}
+
+#bg ul li {
+    text-align: center;
+}
+
+#bg ul li h2{
+    margin-bottom: -20px !important;
+    font-size: 18px !important;
+    text-align: center;
+    margin-right: 50px;
+}
+
+#bg ul li p {
+    margin-right: 50px;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    color: var(--dark-gray);
+}
+
+
+
+.attribution {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+}
+.attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+    .card{
+        width: 90%;
+    }
+
+    #bg img {
+        margin-left: 100px !important;
+        margin-right: 100px !important;
+    }
+
+    #bg p {
+        font-weight: 400;
+        margin-top: 20px !important;
+        font-size: 15px;
+    }
+
+    .name {
+        margin-left: 80px !important;
+        margin-right: 80px !important;
+    }
+
+    #bg ul li {
+        margin-right: 15px !important;
+    }
+    #bg ul li h2 {
+        margin-right: 15px !important;
+    }
+
+    #bg ul li p {
+        margin-right: 15px !important;
+    }
+}
